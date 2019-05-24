@@ -3,7 +3,24 @@ package arvoreRubroNegra;
 import java.awt.BufferCapabilities.FlipContents;
 import java.util.NoSuchElementException;
 
+import Prov.NoABB;
+
+
+
+
+
+
+
+
+
 public class ArvRubroNegra<Chave extends Comparable<Chave>,Valor> {
+
+	
+	public ArvRubroNegra() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 
 	private static final boolean Vermelho   = true;
     private static final boolean Preto = false;
@@ -25,6 +42,21 @@ public class ArvRubroNegra<Chave extends Comparable<Chave>,Valor> {
         return minimo(x.getNoEquerdo()); 
      } 
      
+     
+  /***** Imprimir *////   
+     public void print() {
+ 		this.print(this.raiz);
+ 	}
+
+ 	private void print(NoRB<Chave, Valor> start) {
+ 		// Simetrica
+ 		if (start != null) {
+ 			print(start.getNoDireito());
+ 			System.out.println(start.getElemento().toString());
+
+ 			print(start.getNoEquerdo());
+ 		}
+ 	}
      
      
 	
